@@ -1,14 +1,21 @@
 function pasanganTerbesar(num) {
-    var str = String(num)
-    var tempat = ''
-    for (i = 0; i < str.length; i++) {
-        tempat 
+    var nomor = String(num)
+    var temp = ''
+    for (i = 0; i < nomor.length - 1; i++) {
+        temp += nomor[i] + nomor[i + 1] + ' '
+
+    }
+
+    var pisah = temp.split(' ').map(function (item) { return parseInt(item, 10) })
+    var pop = pisah.pop()
+    var number = []
+    for (i = 0; 0 < pisah.length; i++) {
+        number += pisah[i + 1]
+        if (number >= pisah[i]) {
+            return number
+        }
     }
 }
-
-
-
-
 
 // TEST CASES
 console.log(pasanganTerbesar(641573)); // 73
