@@ -3,7 +3,6 @@ function hitungJumlahKata(kalimat) {
     return str.length
 }
 
-
 // TEST CASES
 console.log(hitungJumlahKata('I have a dream')); // 4
 console.log(hitungJumlahKata('Never eat shredded wheat or cake')); // 6

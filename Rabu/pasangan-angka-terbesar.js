@@ -8,14 +8,18 @@ function pasanganTerbesar(num) {
 
     var pisah = temp.split(' ').map(function (item) { return parseInt(item, 10) })
     var pop = pisah.pop()
-    var number = []
-    for (i = 0; 0 < pisah.length; i++) {
-        number += pisah[i + 1]
-        if (number >= pisah[i]) {
-            return number
+    var angkaBig = pisah[0]
+    for (var i = 0; i < pisah.length; i++) {
+        if (angkaBig < pisah[i]) {
+            angkaBig = pisah[i]
         }
+
     }
+
+    return angkaBig
 }
+
+
 
 // TEST CASES
 console.log(pasanganTerbesar(641573)); // 73
