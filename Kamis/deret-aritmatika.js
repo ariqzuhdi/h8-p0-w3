@@ -1,10 +1,14 @@
 function tentukanDeretAritmatika(arr) {
-    check = true
-    for (i = 0; i < arr.length; i++) {
-        if (arr[i] - arr[i - 1] === arr[i] - arr[i - 1]) {
-            return true
-        } else { return false }
+    var check = true
+    var beda = arr[1] - arr[0]
+    for (var i = 0; i < arr.length - 1; i++) {
+        var beda1 = arr[i + 1] - arr[i]
+        if (beda !== beda1) {
+            check = false
+            
+        }
     }
+    return check
 }
 
 // TEST CASES
