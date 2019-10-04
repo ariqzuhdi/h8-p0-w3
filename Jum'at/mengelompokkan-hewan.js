@@ -1,10 +1,18 @@
 function groupAnimals(animals) {
-    var animalia = []
-    for (var i = 0; i < animals.length; i++) {
-        animalia.push(animals[i])
+    var hewan = [[]]
+    var compare = 0
+    animals.sort()
+    hewan[0].push(animals[0])
+    for (var i = 1; i < animals.length; i++) {
+        if (animals[i][0] === hewan[compare][0][0]) {
+            hewan[compare].push(animals[i])
+        }
+        else {
+            compare++
+            hewan[compare] = [animals[i]]
+        }
     }
-
-    return animalia.sort()
+    return hewan
 }
 
 // TEST CASES
