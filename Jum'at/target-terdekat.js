@@ -26,11 +26,3 @@ console.log(targetTerdekat(['o', ' ', ' ', ' ', 'x', 'x', 'x'])); // 4
 console.log(targetTerdekat(['x', ' ', ' ', ' ', 'x', 'x', 'o', ' '])); // 1
 console.log(targetTerdekat([' ', ' ', 'o', ' '])); // 0
 console.log(targetTerdekat([' ', 'o', ' ', 'x', 'x', ' ', ' ', 'x'])); // 2
-// var biggestNumber = []
-// var arr = [1, 2 ,3, 4, 5, 9, 7, 8, 12, 6, 1, 3, 6]
-// for(var i = 0; i < arr.length; i++){
-//     if(biggestNumber < arr[i]){
-//         biggestNumber = arr[i]
-//     }
-// }
-// console.log(biggestNumber)
